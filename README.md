@@ -13,13 +13,7 @@ For this lab, you will learn a little more about end-to-end testing, by implemen
 ## Completing the Assignment
 
 1. The first part of the lab is to continue what we started in class.  The [simple.feature](e2e/src/test/resources/edu/cscc/topics/quality/e2e/simple.feature) feature file is missing the [Steps](e2e/src/test/java/edu/cscc/topics/quality/e2e/Steps.java) implementation for the second Scenarion (`Using the link on the page`).  Fill it in and ensure your test succeeds.
-1. For the second part of the lab you will add a new feature file with one scenario.  Your scenario should look like:
-```
-    Given I am on the Google Cloud homepage
-    When I click the Blog link
-    Then I am taken to the Google Cloud Blog page
-```
-
+1. For the second part of the lab you will add a new feature file with one scenario.  Your scenario should match what you see in the [Scenario Definition](#scenario-definition) section of this `README.md`.
     1.  Note that the URL for the Google Cloud homepage is "https://cloud.google.com".  You can find the "Blog" link at the bottom of the page. 
     1.  There are various ways to [find HTML elements](https://www.seleniumhq.org/docs/03_webdriver.jsp) using Selenium WebDriver.  Some are more stable than others.  Read through the `Locating UI Elements` section of the referenced link and consider the tradeoffs of the various methods.  Can you think of any troubles you might have if you weren't on the Google Cloud dev team but were trying to maintain a rich e2e test suite building off of what you're doing in this lab?
     1.  Whatever method you use to find the link to the Google Cloud Blog page, you will need to [follow the link](https://stackoverflow.com/questions/19060806/click-on-hyperlink-using-selenium-webdriver).
@@ -39,3 +33,9 @@ If you need to amend your work after you issue your initial pull request:
 1. Push your changes to gitHub
 1. Verify the new commits were automatically added to your open pull request
 
+## Scenario Definition
+```
+    Given I am on the Google Cloud homepage
+    When I click the Blog link
+    Then I am taken to the Google Cloud Blog page
+```
