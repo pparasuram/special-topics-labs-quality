@@ -21,8 +21,11 @@ For this lab, you will learn a little more about end-to-end testing, by implemen
 ```
 
     1.  Note that the URL for the Google Cloud homepage is "https://cloud.google.com".  You can find the "Blog" link at the bottom of the page. 
-    1.  There are various ways to [find HTML elements](https://www.seleniumhq.org/docs/03_webdriver.jsp) using Selenium WebDriver.  Some are more stable than others.  Read through the `Locating UI Elements` section of the referenced link and consider the tradeoffs of the various methods.  Can you think of any troubles you might have if you weren't on the Google Cloud dev team but were trying to maintain a rich e2e test suite building off of what you're doing in this lab? 
+    1.  There are various ways to [find HTML elements](https://www.seleniumhq.org/docs/03_webdriver.jsp) using Selenium WebDriver.  Some are more stable than others.  Read through the `Locating UI Elements` section of the referenced link and consider the tradeoffs of the various methods.  Can you think of any troubles you might have if you weren't on the Google Cloud dev team but were trying to maintain a rich e2e test suite building off of what you're doing in this lab?
+    1.  Whatever method you use to find the link to the Google Cloud Blog page, you will need to [follow the link](https://stackoverflow.com/questions/19060806/click-on-hyperlink-using-selenium-webdriver).
 
+## Hints
+1. Probably the trickiest part here is timing related to clicking a hyperlink and verifying you've landed on the correct page.  There are many techniques, but [this StackOverflow post](https://stackoverflow.com/questions/36590274/selenium-how-to-wait-until-page-is-completely-loaded) should get you to a solution that works (if not perfect).
 
 ## Submitting Your Work
 
