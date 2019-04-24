@@ -15,4 +15,4 @@ Scenario: Using the link on the page
 Scenario: Link navigates to hello subpage
   Given I am on the Hello World homepage
   When I click the link with id "helloLink"
-  Then Then I am taken to the hello subpage
+  Then I am taken to the hello subpage
