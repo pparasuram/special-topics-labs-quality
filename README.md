@@ -14,7 +14,7 @@ For this lab, you will learn a little more about end-to-end testing, by implemen
 
 ## Completing the Assignment
 
-1. The first part of the lab is to continue what we started in class.  The [simple.feature](e2e/src/test/resources/edu/cscc/topics/quality/e2e/simple.feature) feature file is missing the [Steps](e2e/src/test/java/edu/cscc/topics/quality/e2e/Steps.java) implementation for the second Scenario (`Using the link on the page`).  Fill it in and ensure your test succeeds
+1. The first part of the lab is to continue what we started in class.  The [simple.feature](e2e/src/test/resources/edu/cscc/topics/quality/e2e/simple.feature) feature file is missing the [Steps](e2e/src/test/java/edu/cscc/topics/quality/e2e/Steps.java) implementation for _either_ the second or third Scenario (`Using the link on the page` or `Link navigates to hello subpage`).  Fill in _either_ of them and ensure your test succeeds.
     1. Cucumber tests are written in `Given`/`When`/`Then` format.  
         1. The `Given` steps can be considered to be a "setup" phase, or a set of preconditions.  For example, if I have a `Given I am on the CSCC homepage` step, I would expect the implementation of that step to navigate the browser to `https://www.cscc.edu/` so the test can proceed.
         1. The `When` steps are the action or functionality being tested.  For example, `When I click the Submit button` or `When I click the "next" link`.  These generally direct the browser to do some navigation.
@@ -24,6 +24,7 @@ For this lab, you will learn a little more about end-to-end testing, by implemen
     1.  Note that the URL for the Google Cloud homepage is "https://cloud.google.com".  You can find the "Blog" link at the bottom of the page. 
     1.  There are various ways to [find HTML elements](https://www.seleniumhq.org/docs/03_webdriver.jsp) using Selenium WebDriver.  Some are more stable than others.  Read through the `Locating UI Elements` section of the referenced link and consider the tradeoffs of the various methods.  Can you think of any troubles you might have if you weren't on the Google Cloud dev team but were trying to maintain a rich e2e test suite building off of what you're doing in this lab?
     1.  Whatever method you use to find the link to the Google Cloud Blog page, you will need to [follow the link](https://stackoverflow.com/questions/19060806/click-on-hyperlink-using-selenium-webdriver).
+    1.  You can verify you are on the Google Cloud Blog page a couple ways.  The easiest is probably to use `String url = driver.getCurrentUrl();` and verify that `url` is the URL for Google Cloud Blog ("https://cloud.google.com/blog/").  Alternatively, you can look for an element on that page that guarantees you're on the cloud blog page (e.g. the "Blog" text in the header.
     1.  I suggest you add a new feature file (e.g. `google-cloud.feature`) and a new step definition java class (e.g. `GoogleCloudSteps.java`).
 
 ## Hints
