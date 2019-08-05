@@ -5,6 +5,7 @@ Scenario: Home page
   When I go to the Hello World homepage
   Then "Hello!" should be displayed
 
+#TODO:
 # Fill this in, or the next one. Note that when you go to your web site, clicking the hello button will give you some json as a response
 Scenario: Using the link on the page
   Given I am on the Hello World homepage
