@@ -6,7 +6,7 @@ For this lab, you will learn a little more about end-to-end testing, by implemen
 
 ## Getting Started:
 
-1. Copy the starter code from here into a new, private repository in your personal GitHub account using [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#copy-the-starter-code-into-a-new-private-repository-in-your-personal-github-account) substituting this repository URL ``https://github.com/jschmersal-cscc/special-topics-labs-quality`` for the one referenced in that document.  When adding a collaborator, be sure to add me ("jschmersal-cscc").
+1. Copy the starter code from here into a new, private repository in your personal GitHub account using [these instructions](https://github.com/jschmersal-cscc/lab0-completing-and-submitting-assignments) substituting this repository URL ``https://github.com/jschmersal-cscc/special-topics-labs-quality`` for the one referenced in that document.  When adding a collaborator, be sure to add me ("jschmersal-cscc").
 2. Create a new branch for your code changes as described in [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#before-you-start-coding)
 3. **WARNING**: This lab is like the last one.  IntelliJ doesn't know (by default) that your integration or e2e tests depend on a server running.  So you need to either:
     1. Run the tests using the command line (from the `e2e/` directory):  `mvn clean install`
