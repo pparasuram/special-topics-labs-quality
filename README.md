@@ -7,7 +7,7 @@ For this lab, you will learn a little more about end-to-end testing, by implemen
 ## Getting Started:
 
 1. Copy the starter code from here into a new, private repository in your personal GitHub account using [these instructions](https://github.com/jschmersal-cscc/lab0-completing-and-submitting-assignments) substituting this repository URL ``https://github.com/jschmersal-cscc/special-topics-labs-quality`` for the one referenced in that document.  When adding a collaborator, be sure to add me ("jschmersal-cscc").
-2. Create a new branch for your code changes as described in [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#before-you-start-coding)
+2. Create a new branch for your code changes as described in [these instructions](https://github.com/jschmersal-cscc/lab0-completing-and-submitting-assignments#important-before-you-start-coding)
 3. **WARNING**: This lab is like the last one.  IntelliJ doesn't know (by default) that your integration or e2e tests depend on a server running.  So you need to either:
     1. Run the tests using the command line (from the `e2e/` directory):  `mvn clean install`
     1. Run the tests from IntelliJ but make sure your server is running, by running on the command line (again from the `e2e/` directory) `mvn jetty:run`.  This will start your server listening on port 8080, so [http://localhost:8080](http://localhost:8080) is navigable in Firefox and you can run your e2e/integration tests against it.  Note that the server will stay running until you hit `<ctrl>-c` in the terminal you ran this command in.
@@ -35,8 +35,8 @@ For this lab, you will learn a little more about end-to-end testing, by implemen
 
 ## Submitting Your Work
 
-1. Create a pull request for your branch using [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#once-you-are-ready-to-submit-your-work-for-grading)
-1. Submit the assignment in Blackboard as described in [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#once-your-pull-request-is-created-and-i-am-added-as-a-reviewer)
+1. Create a pull request for your branch using [these instructions](https://github.com/jschmersal-cscc/lab0-completing-and-submitting-assignments#push-your-changes-and-create-a-pull-request-for-grading)
+1. Submit the assignment in Blackboard as described in [these instructions](https://github.com/jschmersal-cscc/lab0-completing-and-submitting-assignments#once-your-pull-request-is-reviewed-and-approved)
 
 __NOTE: I will provide feedback via. comments in your pull request.__
 If you need to amend your work after you issue your initial pull request:
