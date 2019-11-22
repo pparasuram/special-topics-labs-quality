@@ -1,6 +1,7 @@
 package edu.cscc.topics.quality.e2e;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
@@ -45,4 +46,28 @@ public class Steps {
         String output = driver.findElement(By.id("helloId")).getText();
         Assert.assertEquals(text, output);
     }
+
+    @Given("I am on the Hello World homepage")
+    public void i_am_on_the_Hello_World_homepage() {
+        // Write code here that turns the phrase above into concrete actions
+        // throw new cucumber.api.PendingException();
+        driver.navigate().to("http://localhost:8080/");
+    }
+
+    @When("I click the link with id {string}")
+    public void i_click_the_link_with_id(String html_id) {
+        // Write code here that turns the phrase above into concrete actions
+        // throw new cucumber.api.PendingException();
+        driver.findElement(By.id(html_id)).click();
+    }
+
+    @Then("I am taken to the hello subpage")
+    public void i_am_taken_to_the_hello_subpage() {
+        // Write code here that turns the phrase above into concrete actions
+        // throw new cucumber.api.PendingException();
+        String urlText = driver.getCurrentUrl();
+        Assert.assertEquals("http://localhost:8080/hello", urlText);
+    }
+
+
 }
