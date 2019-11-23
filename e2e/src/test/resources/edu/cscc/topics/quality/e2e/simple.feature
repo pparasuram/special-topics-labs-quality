@@ -13,3 +13,7 @@ Scenario: Link navigates to hello subpage
   Then I am taken to the hello subpage
 
 
+Scenario: Link navigates to Google Blog page
+  Given I am on the Google Cloud homepage
+  When I click "Blog"
+  Then I am taken to the Google Cloud Blog page
