@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class GoogleCloudSteps {
     private static WebDriver driver;
 
@@ -22,6 +24,7 @@ public class GoogleCloudSteps {
          */
         WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         // WebDriverManager.chromedriver().setup();
         // driver = new ChromeDriver();
     }
@@ -58,7 +61,8 @@ public class GoogleCloudSteps {
         // Write code here that turns the phrase above into concrete actions
         // throw new cucumber.api.PendingException();
         String urlText = driver.getCurrentUrl();
-        Assert.assertEquals("https://cloud.google.com/blog", urlText);
+        // Assert.assertEquals("https://cloud.google.com/blog", urlText);
+        Assert.assertTrue(urlText.contains("https://cloud.google.com/blog"));
     }
 
 }

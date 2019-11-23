@@ -13,6 +13,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class Steps {
     private static WebDriver driver;
 
@@ -25,6 +27,7 @@ public class Steps {
          */
         WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     }
 
     /*
@@ -69,10 +72,10 @@ public class Steps {
         String urlText = driver.getCurrentUrl();
         Assert.assertEquals("http://localhost:8080/hello", urlText);
     }
-
+/*
     @Then("I close browser")
     public void close_browser(){
         driver.close();
     }
-
+*/
 }
